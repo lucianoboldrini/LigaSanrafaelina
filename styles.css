@@ -157,90 +157,100 @@ header h1 {
     color: #ddd;
 }
 
-/* Sección de Últimas Noticias */
-.ultimas-noticias {
-    padding: 48px 0;
-    background-color: #f8f9fa;
+/* Estilos para la sección de reconocimientos */
+.reconocimientos {
+    padding: 60px 20px;
+    background: var(--light-color);
+    color: var(--dark-color);
     text-align: center;
-}
-
-.section-title {
-    font-size: 3rem;
-    /* Aumentado un 20% */
-    margin-bottom: 36px;
-    /* Aumentado un 20% */
-    color: #333;
-}
-
-.noticia {
-    margin-bottom: 36px;
-    /* Aumentado un 20% */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    /* Asegura que todas las noticias tengan la misma altura */
-}
-
-.noticia-img {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    /* Aumentado un 20% */
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    /* Flex para que la imagen ocupe el espacio disponible */
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: var(--font-family);
 }
 
-.noticia-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.titulo-incrustado {
-    position: absolute;
-    bottom: 0;
-    /* Ubicado en la parte inferior */
-    left: 0;
-    width: 100%;
-    /* Ocupa todo el ancho de la imagen */
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px 0;
-    /* Ajustado para un tamaño más pequeño */
-    font-size: 1.2rem;
-    /* Tamaño de fuente más pequeño */
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.descripcion {
-    margin-top: 12px;
-    /* Aumentado un 20% */
-    font-size: 1.44rem;
-    /* Aumentado un 20% */
-    color: #555;
-    text-align: justify;
-    flex: 1;
-    /* Flex para que la descripción ocupe el espacio disponible */
-    display: flex;
-    align-items: flex-start;
-    /* Alinea el contenido de la descripción al inicio */
-}
-
-/* SECCIÓN CARNET REQUISITOS */
-.carnet-requisitos {
-    padding: 40px 0;
-    background: linear-gradient(0deg, var(--primary-color), var(--light-color), var(--accent-color), var(--light-color), var(--primary-color));
-    text-align: center;
-}
-
-.section-title {
+.reconocimientos h2 {
     font-size: 2.5rem;
-    color: var(--primary-color);
     margin-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--primary-color);
+}
+
+.reconocimientos p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.reconocimientos h3 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    color: var(--secondary-color);
+}
+
+.reconocimientos ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.reconocimientos ul li {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin: 5px 0;
+}
+
+.reconocimientos a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.reconocimientos a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.reconocimientos img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reconocimientos .centrado {
+    text-align: center;
+}
+/* Estilos para la sección del Torneo y Copa Vendimia */
+.torneo-vendimia {
+    padding: 60px 20px;
+    background: var(--light-color);
+    color: var(--dark-color);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: var(--font-family);
+}
+
+.torneo-vendimia h2 {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+    background-color:var(--secondary-color);
     /* Fondo más claro */
     padding: 10px 20px;
     border-radius: 10px;
@@ -249,498 +259,791 @@ header h1 {
     /* Ajuste del tamaño del fondo */
 }
 
-.row {
-    justify-content: space-around;
-}
-
-.card {
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius:  20px;
-    overflow: hidden;
-    background-color: #b3e5fc;
-    transition: transform 0.2s;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    /* Asegura que todas las tarjetas tengan la misma altura */
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-}
-
-.card-body {
-    padding: 20px ;
-    flex: 1;
-    /* Ocupa el espacio disponible */
-}
-
-.card-text {
-    font-size: 1.4rem;
-    color: #01579b;
+.torneo-vendimia h3 {
+    font-size: 2rem; 
+    color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
-.list-group {
-    flex: 1;
-    /* Ocupa el espacio disponible */
+.torneo-vendimia .grupos ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.list-group-item {
-    border: none;
-    padding: 20px 15px;
-    text-align: left;
-    background-color: #e1f5fe;
-    color: #0277bd;
+.torneo-vendimia .grupos ul li {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.list-group-item:not(:last-child) {
-    border-bottom: 1px solid #ddd;
+.torneo-vendimia .grupos ul li .equipo,
+.torneo-vendimia .grupos ul li .puntos {
+    margin: 0 10px;
 }
 
-/* Banner Section */
-.banner-section {
+.torneo-vendimia .grupos ul li img.logo {
+    margin-left: 10px;
+    max-width: 80px; /* Aumenta el tamaño máximo de los logos */
+    height: 80px; /* Mantén la altura consistente */
+    object-fit: contain; /* Asegura que los logos no se corten */
+}
+
+.torneo-vendimia .grupos .puntos {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.torneo-vendimia .descripcion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.torneo-vendimia .descripcion p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: var(--dark-color);
+}
+
+
+    /* Sección de Últimas Noticias */
+    .ultimas-noticias {
+        padding: 48px 0;
+        background-color: #f8f9fa;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        /* Aumentado un 20% */
+        margin-bottom: 36px;
+        /* Aumentado un 20% */
+        color: #333;
+    }
+
+    .noticia {
+        margin-bottom: 36px;
+        /* Aumentado un 20% */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        /* Asegura que todas las noticias tengan la misma altura */
+    }
+
+    .noticia-img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        /* Aumentado un 20% */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        /* Flex para que la imagen ocupe el espacio disponible */
+    }
+
+    .noticia-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .titulo-incrustado {
+        position: absolute;
+        bottom: 0;
+        /* Ubicado en la parte inferior */
+        left: 0;
+        width: 100%;
+        /* Ocupa todo el ancho de la imagen */
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px 5px;
+        /* Ajustado para un tamaño más pequeño */
+        font-size: 1.2rem;
+        /* Tamaño de fuente más pequeño */
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .descripcion {
+        margin-top: 12px;
+        /* Aumentado un 20% */
+        font-size: 1.44rem;
+        /* Aumentado un 20% */
+        color: #555;
+        text-align: justify;
+        flex: 1;
+        /* Flex para que la descripción ocupe el espacio disponible */
+        display: flex;
+        align-items: flex-start;
+        /* Alinea el contenido de la descripción al inicio */
+    }
+
+    /* Estilos para la sección de Torneos */
+.torneos {
+    padding: 60px 20px;
+    background: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: var(--font-family);
+}
+
+.torneo {
+    margin-bottom: 40px;
+}
+
+.torneo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.torneo p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: var(--dark-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.torneo .imagenes {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-    /* Espacio alrededor del banner */
-    background-color: #f8f9fa;
-    /* Color de fondo opcional */
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.banner-container {
-    text-align: center;
-}
-
-.banner-image {
-    max-width: 80%;
-    /* Ajusta este valor según sea necesario */
-    height: auto;
-    border-radius: 10px;
-    /* Bordes redondeados opcionales */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra opcional */
-}
-
-/* UBICACIÓN */
-.ubicacion {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #e0f7fa;
-    border: 2px solid var(--primary-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px auto;
-    max-width: 90%;
-}
-
-.horarios {
-    font-size: 2rem;
-    color: #000000;
-    margin-bottom: 10px;
-}
-
-.map-container {
-    position: relative;
-    width: 100%;
-    height: auto;
+.torneo .imagenes img {
     max-width: 100%;
-    overflow: hidden;
+    width: 45%;
+    height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: scale-down; /* Asegura que la imagen mantenga sus proporciones y ocupe el espacio disponible */
+}
+/* Estilos para la sección de la Copa Oro y Copa Plata */
+.copa-oro {
+    padding: 60px 20px;
+    background: var(--light-color);
+    color: var(--dark-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: var(--font-family);
+    text-align: center;
 }
 
-.map-container iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
+.copa-oro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.copa-oro .division {
+    margin-bottom: 40px;
+}
+
+.copa-oro .division h3 {
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+    background-color:var(--secondary-color);
+    /* Fondo más claro */
+    padding: 10px 20px;
     border-radius: 10px;
+    /* Bordes redondeados */
+    display: inline-block;
+    
+}
+
+.copa-oro .division p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: var(--dark-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.copa-oro .division img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.copa-oro .division a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.copa-oro .division a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 
+    /* SECCIÓN CARNET REQUISITOS */
+    .carnet-requisitos {
+        padding: 40px 0;
+        background: linear-gradient(0deg, var(--primary-color), var(--light-color), var(--accent-color), var(--light-color), var(--primary-color));
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.7);
+        /* Fondo más claro */
+        padding: 10px 20px;
+        border-radius: 10px;
+        /* Bordes redondeados */
+        display: inline-block;
+        /* Ajuste del tamaño del fondo */
+    }
+
+    .row {
+        justify-content: space-around;
+    }
+
+    .card {
+        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: #b3e5fc;
+        transition: transform 0.2s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        /* Asegura que todas las tarjetas tengan la misma altura */
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .card-body {
+        padding: 20px;
+        flex: 1;
+        /* Ocupa el espacio disponible */
+    }
+
+    .card-text {
+        font-size: 1.4rem;
+        color: #01579b;
+        margin-bottom: 20px;
+    }
+
+    .list-group {
+        flex: 1;
+        /* Ocupa el espacio disponible */
+    }
+
+    .list-group-item {
+        border: none;
+        padding: 20px 15px;
+        text-align: left;
+        background-color: #e1f5fe;
+        color: #0277bd;
+    }
+
+    .list-group-item:not(:last-child) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Banner Section */
+    .banner-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+        /* Espacio alrededor del banner */
+        background-color: #f8f9fa;
+        /* Color de fondo opcional */
+    }
+
+    .banner-container {
+        text-align: center;
+    }
+
+    .banner-image {
+        max-width: 80%;
+        /* Ajusta este valor según sea necesario */
+        height: auto;
+        border-radius: 10px;
+        /* Bordes redondeados opcionales */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Sombra opcional */
+    }
+
+    /* UBICACIÓN */
+    .ubicacion {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #e0f7fa;
+        border: 2px solid var(--primary-color);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px auto;
+        max-width: 90%;
+    }
+
+    .horarios {
+        font-size: 2rem;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    .map-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+        border-radius: 10px;
+    }
 
 
-/* TITULO DE SECCIÓN */
-.section-title {
+
+
+    /* TITULO DE SECCIÓN */
+    .section-title {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .section-title h1 {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* SECCIONES DE PDF */
+    .pdf-section {
+        padding: 60px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .pdf-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+    }
+
+    .pdf-item {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-align: center;
+    }
+
+    .pdf-item h2 {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+
+    .pdf-item p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .pdf-item a {
+        text-decoration: none;
+        color: white;
+        background-color: var(--primary-color);
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .pdf-item a:hover {
+        background-color: #02669d;
+    }
+
+    /* Nuestra Liga */
+    .nuestra-liga {
+        padding: 40px 0;
+        background-color: #f8f9fa;
+        border: 1px solid #b2ebf2;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .liga-desc {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 2px solid var(--primary-color);
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+    }
+
+    .liga-title {
+        text-align: center;
+        color: var(--primary-color);
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        margin-bottom: 30px;
+        padding: 10px;
+        border: 2px solid var(--primary-color);
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nuestra-liga .club {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nuestra-liga .club-img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nuestra-liga h4 {
+        color: #333;
+        font-size: 1.1rem;
+    }
+/* Estilos para el botón de boletines */
+.boletines {
     text-align: center;
     margin: 40px 0;
 }
 
-.section-title h1 {
+.boletines h2 {
     font-size: 2.5rem;
     color: var(--primary-color);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-/* SECCIONES DE PDF */
-.pdf-section {
-    padding: 60px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.pdf-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.pdf-item {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    text-align: center;
-}
-
-.pdf-item h2 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.pdf-item p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.pdf-item a {
-    text-decoration: none;
-    color: white;
-    background-color: var(--primary-color);
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.pdf-item a:hover {
-    background-color: #02669d;
-}
-
-/* Nuestra Liga */
-.nuestra-liga {
-    padding: 40px 0;
-    background-color: #f8f9fa;
-    border: 1px solid #b2ebf2;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.liga-desc {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
-}
-
-.liga-title {
-    text-align: center;
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    margin-bottom: 30px;
-    padding: 10px;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.nuestra-liga .club {
-    text-align: center;
     margin-bottom: 20px;
 }
 
-.nuestra-liga .club-img {
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.nuestra-liga h4 {
-    color: #333;
+.btn-boletines {
+    display: inline-block;
     font-size: 1.1rem;
-}
-
-/* Estilos generales para las publicidades */
-.ad-banner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px 0;
-    /* Espacio entre las secciones */
-    text-align: center;
-}
-
-.ad-banner img {
-    flex: 1 1 11%;
-    /* Reduce el tamaño a la mitad */
-    max-width: 11%;
-    /* Limita el ancho de cada imagen */
-    height: auto;
-    margin: 10px;
-    /* Espacio entre las imágenes */
-    border-radius: 10px;
-    /* Bordes redondeados para un look moderno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* FOOTER */
-footer {
-    background: radial-gradient(var(--primary-color), var(--secondary-color), var(--accent-color), var(--light-color), var(--primary-color));
-    color: white;
-    text-align: center;
-    padding: 40px 0;
-    font-size: 1.5rem;
-    margin-top: auto;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.social-links a {
-    color: white;
-    font-size: 4rem;
-    transition: color 0.3s ease;
+    color: #fff;
+    background-color: var(--primary-color);
     text-decoration: none;
-    /* Elimina la línea debajo de los iconos */
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.social-links a:hover {
-    color: #bbdefb;
+.btn-boletines:hover {
+    background-color: var(--secondary-color);
 }
 
-footer p {
-    margin: 0;
-}
-
-/* General Media Queries */
-/* Media Queries */
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .card {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .card-text {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .section-title {
-        font-size: 1.8rem;
-    }
-
-    .card-text {
-        font-size: 1rem;
-    }
-
-    .list-group-item {
-        font-size: 0.9rem;
-    }
-}
-
-
-
-/* Pantallas Grandes (max-width: 1500px) */
-@media (max-width: 1500px) {
-    .section-title {
-        font-size: 2.7rem;
-    }
-
-    .titulo-incrustado {
-        font-size: 1.62rem;
-    }
-
-    .descripcion {
-        font-size: 1.3rem;
-    }
-}
-
-/* Pantallas Medianas (max-width: 1000px) */
-@media (max-width: 1000px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .navbar li {
-        margin: 10px 0;
-    }
-
-    .navbar a {
-        font-size: 1.2rem;
-        padding: 15px 20px;
-    }
-
-    .nuestra-liga h3 {
-        font-size: 1.5rem;
-        margin-top: 20px;
+    /* Estilos generales para las publicidades */
+    .ad-banner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px 0;
+        /* Espacio entre las secciones */
         text-align: center;
     }
-}
 
-/* Pantallas Pequeñas (max-width: 768px) */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar li {
-        margin: 5px 0;
-    }
-
-    .carousel-inner img {
-        max-height: 300px;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .d-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .card-text {
-        font-size: 1.2rem;
-    }
-
-    .ubicacion {
-        padding: 20px;
-        margin: 10px auto;
-    }
-
-    .pdf-section {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .titulo-incrustado {
-        font-size: 1.44rem;
-    }
-
-    .descripcion {
-        font-size: 1.32rem;
-    }
-}
-
-/* Pantallas Muy Pequeñas (max-width: 480px) */
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    .navbar {
-        padding: 5px;
-    }
-
-    .navbar a {
-        font-size: 0.8rem;
-        padding: 5px 10px;
-    }
-
-    .carousel-inner img {
-        max-height: 200px;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-    }
-
-    .titulo-incrustado {
-        font-size: 0.96rem;
-    }
-
-    .descripcion {
-        font-size: 1.2rem;
-    }
-
-    .ubicacion {
-        padding: 10px;
-        margin: 5px auto;
-    }
-}
-
-/* Ajustes específicos para publicidades */
-@media (max-width: 992px) {
     .ad-banner img {
-        max-width: 15%;
+        flex: 1 1 11%;
+        /* Reduce el tamaño a la mitad */
+        max-width: 11%;
+        /* Limita el ancho de cada imagen */
+        height: auto;
+        margin: 10px;
+        /* Espacio entre las imágenes */
+        border-radius: 10px;
+        /* Bordes redondeados para un look moderno */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-}
 
-@media (max-width: 768px) {
-    .ad-banner img {
-        max-width: 22.5%;
-    }
-}
-
-@media (max-width: 480px) {
-    .ad-banner img {
-        max-width: 50%;
-    }
-}
-
-/* Ajustes específicos para horarios y mapas */
-@media (max-width: 768px) {
-    .horarios {
+    /* FOOTER */
+    footer {
+        background: radial-gradient(var(--primary-color), var(--secondary-color), var(--accent-color), var(--light-color), var(--primary-color));
+        color: white;
+        text-align: center;
+        padding: 40px 0;
         font-size: 1.5rem;
+        margin-top: auto;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .map-container iframe {
-        height: 250px;
-    }
-}
-
-@media (max-width: 480px) {
-    .horarios {
-        font-size: 1.2rem;
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
     }
 
-    .map-container iframe {
-        height: 200px;
+    .social-links a {
+        color: white;
+        font-size: 4rem;
+        transition: color 0.3s ease;
+        text-decoration: none;
+        /* Elimina la línea debajo de los iconos */
     }
-}
+
+    .social-links a:hover {
+        color: #bbdefb;
+    }
+
+    footer p {
+        margin: 0;
+    }
+
+    /* General Media Queries */
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .card {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .card-text {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .section-title {
+            font-size: 1.8rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+        }
+
+        .list-group-item {
+            font-size: 0.9rem;
+        }
+    }
+
+
+
+    /* Pantallas Grandes (max-width: 1500px) */
+    @media (max-width: 1500px) {
+        .section-title {
+            font-size: 2.7rem;
+        }
+
+        .titulo-incrustado {
+            font-size: 1.62rem;
+        }
+
+        .descripcion {
+            font-size: 1.3rem;
+        }
+    }
+
+    /* Pantallas Medianas (max-width: 1000px) */
+    @media (max-width: 1000px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .navbar li {
+            margin: 10px 0;
+        }
+
+        .navbar a {
+            font-size: 1.2rem;
+            padding: 15px 20px;
+        }
+
+        .nuestra-liga h3 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+
+    /* Pantallas Pequeñas (max-width: 768px) */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 2rem;
+        }
+
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar li {
+            margin: 5px 0;
+        }
+
+        .carousel-inner img {
+            max-height: 300px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .d-flex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            width: 100%;
+        }
+
+        .card-text {
+            font-size: 1.2rem;
+        }
+
+        .ubicacion {
+            padding: 20px;
+            margin: 10px auto;
+        }
+
+        .pdf-section {
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        .titulo-incrustado {
+            font-size: 1.44rem;
+        }
+
+        .descripcion {
+            font-size: 1.32rem;
+        }
+    }
+
+    /* Pantallas Muy Pequeñas (max-width: 480px) */
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        .navbar {
+            padding: 5px;
+        }
+
+        .navbar a {
+            font-size: 0.8rem;
+            padding: 5px 10px;
+        }
+
+        .carousel-inner img {
+            max-height: 200px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+        }
+
+        .titulo-incrustado {
+            font-size: 0.96rem;
+        }
+
+        .descripcion {
+            font-size: 1.2rem;
+        }
+
+        .ubicacion {
+            padding: 10px;
+            margin: 5px auto;
+        }
+    }
+
+    /* Ajustes específicos para publicidades */
+    @media (max-width: 992px) {
+        .ad-banner img {
+            max-width: 15%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .ad-banner img {
+            max-width: 22.5%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .ad-banner img {
+            max-width: 50%;
+        }
+    }
+
+    /* Ajustes específicos para horarios y mapas */
+    @media (max-width: 768px) {
+        .horarios {
+            font-size: 1.5rem;
+        }
+
+        .map-container iframe {
+            height: 250px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .horarios {
+            font-size: 1.2rem;
+        }
+
+        .map-container iframe {
+            height: 200px;
+        }
+    }
