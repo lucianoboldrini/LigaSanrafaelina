@@ -514,7 +514,7 @@ header h1 {
     }
 
     .section-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
         color: var(--primary-color);
         margin-bottom: 30px;
         background-color: rgba(255, 255, 255, 0.7);
@@ -555,15 +555,16 @@ header h1 {
     }
 
     .card-body {
-        padding: 20px;
+        padding: 30px;
         flex: 1;
         /* Ocupa el espacio disponible */
     }
 
     .card-text {
-        font-size: 1.4rem;
+        
+        font-size:3rem;
         color: #01579b;
-        margin-bottom: 20px;
+       
     }
 
     .list-group {
@@ -573,14 +574,14 @@ header h1 {
 
     .list-group-item {
         border: none;
-        padding: 20px 15px;
+        padding: 30px 35px;
         text-align: left;
         background-color: #e1f5fe;
         color: #0277bd;
     }
 
     .list-group-item:not(:last-child) {
-        border-bottom: 1px solid #ddd;
+        border-bottom: 3px solid #ddd;
     }
 
     /* Banner Section */
