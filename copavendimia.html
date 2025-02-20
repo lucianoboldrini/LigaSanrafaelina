@@ -3,48 +3,33 @@
 
 <head>
     <!-- Configuración básica -->
-    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Establece la ventana gráfica para mejorar la presentación en dispositivos móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Descripción del sitio para SEO -->
     <meta name="description" content="Sitio web oficial de la Liga Sanrafaelina de Fútbol. Encuentra información sobre campeonatos, equipos y más.">
-    <!-- Palabras clave para mejorar el SEO -->
-    <meta name="keywords" content="fútbol, liga, San Rafael, deportes, campeonato, 2024, fútbol argentino, equipos, Liga Sanrafaelina, liga Sanra, liga San Rafael, Mendoza, fútbol sanrafaelino">
-    <!-- Autor del sitio -->
+    <meta name="keywords" content="fútbol, liga, San Rafael, deportes, campeonato, 2024, fútbol argentino, equipos, Liga Sanrafaelina">
     <meta name="author" content="Luciano Boldrini">
 
-    <!-- Etiquetas Open Graph para mejorar la presentación en redes sociales -->
-    <meta property="og:title" content="Liga Sanrafaelina de Fútbol"> <!-- Título para Open Graph -->
-    <meta property="og:description" content="Sitio web oficial de la Liga Sanrafaelina de Fútbol. Encuentra información sobre campeonatos, equipos y más."> <!-- Descripción para Open Graph -->
-    <meta property="og:image" content="https://ligasanrafaelina.com/img/logo-liga.png"> <!-- URL de la imagen para Open Graph -->
-    <meta property="og:url" content="https://ligasanrafaelina.com"> <!-- URL del sitio para Open Graph -->
-    <meta property="og:type" content="website"> <!-- Tipo de contenido Open Graph -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Liga Sanrafaelina de Fútbol">
+    <meta property="og:description" content="Sitio web oficial de la Liga Sanrafaelina de Fútbol. Encuentra información sobre campeonatos, equipos y más.">
+    <meta property="og:image" content="https://ligasanrafaelina.com/img/logo-liga.png">
+    <meta property="og:url" content="https://ligasanrafaelina.com">
+    <meta property="og:type" content="website">
 
-    <!-- Instrucciones para motores de búsqueda -->
-    <meta name="robots" content="index, follow"> <!-- Indica a los motores de búsqueda que indexen y sigan los enlaces en la página -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ligasanrafaelina.com">
 
-    <!-- URL canónica para evitar problemas de contenido duplicado -->
-    <link rel="canonical" href="https://ligasanrafaelina.com"> <!-- URL canónica del sitio -->
+    <title>Liga Sanrafaelina de Fútbol</title>
 
-    <!-- Título del sitio -->
-    <title>Liga Sanrafaelina de Fútbol</title> <!-- Título de la página que aparece en la pestaña del navegador -->
-
-    <!-- Enlace a estilos CSS -->
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu hoja de estilos principal -->
-
-    <!-- FontAwesome para íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Enlace a la biblioteca de íconos de FontAwesome -->
-
-    <!-- Bootstrap para componentes y diseño responsivo -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Enlace a la biblioteca Bootstrap -->
-
-    <!-- Favicon (icono de pelota de fútbol) -->
-    <link rel="icon" href="img/favicon-LSF.png" type="image/x-icon"> <!-- URL del favicon del sitio, que será una imagen de una pelota de fútbol -->
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Enlace a la fuente Roboto de Google Fonts -->
+    <!-- Enlaces a estilos CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="img/favicon-LSF.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
     <!-- HEADER -->
@@ -66,7 +51,6 @@
                             <a href="reservaA.html">Reserva A</a>
                             <a href="reservaB.html">Reserva B</a>
                             <a href="futsal.html">Futsal</a>
-
                         </div>
                     </li>
                     <li><a href="./reglamentos.html">Reglamentos</a></li>
@@ -80,70 +64,104 @@
     <!-- MAIN SECTION -->
     <main id="inicio">
 
-        <!-- Nueva Sección: Torneo y Copa Vendimia 2025 -->
+        <!-- Sección: Torneo y Copa Vendimia 2025 -->
         <section class="torneo-vendimia">
-            <h2>Torneo y Copa Vendimia 2025</h2>
+            <section id="copa-vendimia-info" class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <img src="img/info-vendi-ini.jpg" alt="Título Copa Vendimia 2025" class="img-fluid mb-4">
+                            <a href="https://www.scorefy.app/futbol/san-rafael/liga-sanrafaelina/LSF-P-V-2025/standings" target="_blank" class="btn btn-primary">
+                                Ver Info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <div class="grupos">
-                <h3>Cabeza de Grupo</h3>
-                <ul>
-                    <li>S.PEDAL <span class="puntos">(51)</span>
-                        <img src="img/pedal.png.png" alt="Equipo Pedal">
-                    </li>
-                    <li>HURACAN <span class="puntos">(49)</span>
-                        <img src="img/huracan.png.png" alt="Equipo Huracán">
-                    </li>
-                    <li>S.QUIROGA <span class="puntos">(46)</span>
-                        <img src="img/quiroga.png.png" alt="Equipo Quiroga">
-                    </li>
-                    <li>PORVENIR <span class="puntos">(42)</span>
-                        <img src="img/elporvenir.png.png" alt="Equipo Porvenir">
-                    </li>
-                </ul>
+            <section id="copa-vendimia" class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="mb-4">🍇 𝙎𝙀 𝙑𝙄𝙀𝙉𝙀, 𝙎𝙀 𝙑𝙄𝙀𝙉𝙀... 𝘾𝙊𝙋𝘼 𝙑𝙀𝙉𝘿𝙄𝙈𝙄𝘼 ②⓪②⑤</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <img src="img/copa-vendimia-info1.jpg" alt="Copa Vendimia Info 1" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="img/copa-vendimia-info2.jpg" alt="Copa Vendimia Info 2" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="img/copa-vendimia-info3.jpg" alt="Copa Vendimia Info 3" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="img/copa-vendimia-info4.jpg" alt="Copa Vendimia Info 4" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="img/copa-vendimia-info5.jpg" alt="Copa Vendimia Info 5" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="img/copa-vendimia-info6.jpg" alt="Copa Vendimia Info 6" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="img/copa-vendimia-info7.jpg" alt="Copa Vendimia Info 7" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="img/copa-vendimia-info8.jpg" alt="Copa Vendimia Info 8" class="img-fluid">
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="img/copa-vendimia-info9.jpg" alt="Copa Vendimia Info 9" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            </div>
-
-            <div class="descripcion">
-                <p>Divididos en cuatro grupos de 7 y 6 equipos, esta edición no contará con invitados, lo que significa
-                    que los grupos de 6 equipos, compartirán un interzonal que se definirá el día del Sorteo.
-                    El año comienza con la COPA VENDIMIA 2025, que pondrá en juego una plaza al TRFA 2025/26, con fecha
-                    de inicio el 15 de Febrero.-
-                    El sorteo y presentación tendrá lugar en el habitual Salón de eventos del Vecchia Terra, el día 06
-                    de Febrero a las 20 hs.</p>
-            </div>
-
-
+            <section id="grupos-conformados" class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="mb-4">Así Quedaron Conformados los Grupos</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-4">
+                            <img src="img/grupoA-C-V.jpg" alt="Grupo A" class="img-fluid">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <img src="img/grupo-B-C-V.jpg" alt="Grupo B" class="img-fluid">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <img src="img/grupo-C-C-V.jpg" alt="Grupo C" class="img-fluid">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <img src="img/grupo-D-C-V.jpg" alt="Grupo D" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
 
-
-
+        <!-- Publicidad antes del footer -->
+        <div class="ad-banner">
+            <img src="img/gobierno-mendoza.jpg" alt="Publicidad del Gobierno de Mendoza">
+            <img src="img/Libreria-Tio-Fenix-02.png" alt="Publicidad de Librería Tío Fénix">
+            <img src="img/logo-afa.jpeg" alt="Publicidad de AFA">
+            <img src="img/logo-commet.png" alt="Publicidad de COMET">
+            <img src="img/tu-municipio-sr.jpg" alt="Publicidad del Municipio">
+        </div>
     </main>
-
-    <!-- Publicidad antes del footer -->
-    <div class="ad-banner">
-        <img src="img/gobierno-mendoza.jpg" alt="Publicidad">
-        <img src="img/Libreria-Tio-Fenix-02.png" alt="Publicidad">
-        <img src="img/logo-afa.jpeg" alt="Publicidad">
-        <img src="img/logo-commet.png" alt="Publicidad">
-
-        <img src="img/tu-municipio-sr.jpg" alt="Publicidad">
-        <img src="img/mañana-seguro-logo.png" alt="Publicidad">
-
-    </div>
-
 
     <!-- FOOTER -->
     <footer>
         <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61554875589776" class="fab fa-facebook"
-                aria-label="Facebook"></a>
+            <a href="https://www.facebook.com/profile.php?id=61554875589776" class="fab fa-facebook" aria-label="Facebook"></a>
             <a href="https://wa.me/5492604626662" class="fab fa-whatsapp" aria-label="WhatsApp"></a>
             <a href="https://www.instagram.com/ligasanrafaelmza/" class="fab fa-instagram" aria-label="Instagram"></a>
         </div>
         <p>&copy; 2025 Liga Sanrafaelina de Fútbol</p>
     </footer>
-
-
 
     <!-- Scripts de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>

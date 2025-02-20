@@ -3,364 +3,294 @@
 
 <head>
     <!-- Configuración básica -->
-    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Establece la ventana gráfica para mejorar la presentación en dispositivos móviles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Descripción del sitio para SEO -->
     <meta name="description" content="Sitio web oficial de la Liga Sanrafaelina de Fútbol. Encuentra información sobre campeonatos, equipos y más.">
-    <!-- Palabras clave para mejorar el SEO -->
-    <meta name="keywords" content="fútbol, liga, San Rafael, deportes, campeonato, 2024, fútbol argentino, equipos, Liga Sanrafaelina, liga Sanra, liga San Rafael, Mendoza, fútbol sanrafaelino">
-    <!-- Autor del sitio -->
+    <meta name="keywords" content="fútbol, liga, San Rafael, deportes, campeonato, 2024, fútbol argentino, equipos, Liga Sanrafaelina">
     <meta name="author" content="Luciano Boldrini">
 
-    <!-- Etiquetas Open Graph para mejorar la presentación en redes sociales -->
-    <meta property="og:title" content="Liga Sanrafaelina de Fútbol"> <!-- Título para Open Graph -->
-    <meta property="og:description" content="Sitio web oficial de la Liga Sanrafaelina de Fútbol. Encuentra información sobre campeonatos, equipos y más."> <!-- Descripción para Open Graph -->
-    <meta property="og:image" content="https://ligasanrafaelina.com/img/logo-liga.png"> <!-- URL de la imagen para Open Graph -->
-    <meta property="og:url" content="https://ligasanrafaelina.com"> <!-- URL del sitio para Open Graph -->
-    <meta property="og:type" content="website"> <!-- Tipo de contenido Open Graph -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Liga Sanrafaelina de Fútbol">
+    <meta property="og:description" content="Sitio web oficial de la Liga Sanrafaelina de Fútbol. Encuentra información sobre campeonatos, equipos y más.">
+    <meta property="og:image" content="https://ligasanrafaelina.com/img/logo-liga.png">
+    <meta property="og:url" content="https://ligasanrafaelina.com">
+    <meta property="og:type" content="website">
 
-    <!-- Instrucciones para motores de búsqueda -->
-    <meta name="robots" content="index, follow"> <!-- Indica a los motores de búsqueda que indexen y sigan los enlaces en la página -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ligasanrafaelina.com">
 
-    <!-- URL canónica para evitar problemas de contenido duplicado -->
-    <link rel="canonical" href="https://ligasanrafaelina.com"> <!-- URL canónica del sitio -->
+    <title>Liga Sanrafaelina de Fútbol</title>
 
-    <!-- Título del sitio -->
-    <title>Liga Sanrafaelina de Fútbol</title> <!-- Título de la página que aparece en la pestaña del navegador -->
-
-    <!-- Enlace a estilos CSS -->
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu hoja de estilos principal -->
-
-    <!-- FontAwesome para íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Enlace a la biblioteca de íconos de FontAwesome -->
-
-    <!-- Bootstrap para componentes y diseño responsivo -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Enlace a la biblioteca Bootstrap -->
-
-    <!-- Favicon (icono de pelota de fútbol) -->
-    <link rel="icon" href="img/favicon-LSF.png" type="image/x-icon"> <!-- URL del favicon del sitio, que será una imagen de una pelota de fútbol -->
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Enlace a la fuente Roboto de Google Fonts -->
+    <!-- Enlaces a estilos CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="img/favicon-LSF.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-        <!-- HEADER -->
-        <header>
-            <div class="container">
-                <img src="img/logo-liga-limpio.png" alt="Logo de la Liga Sanrafaelina" class="logo">
-                <h1>LIGA SANRAFAELINA DE FÚTBOL</h1>
-                
-                <nav>
-                    <ul class="navbar">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn" aria-label="Menú de campeonatos">Campeonatos</a>
-                            <div class="dropdown-content">
-                                <a href="primeraA.html">Primera A</a>
-                                <a href="primeraB.html">Primera B</a>
-                                <a href="femeninoA.html">Femenino A</a>
-                                <a href="femeninoB.html">Femenino B</a>
-                                <a href="reservaA.html">Reserva A</a>
-                                <a href="reservaB.html">Reserva B</a>
-                                <a href="futsal.html">Futsal</a>
-    
-                            </div>
-                        </li>
-                        <li><a href="./reglamentos.html">Reglamentos</a></li>
-                        <li><a href="./boletin.html">Boletines</a></li>
-                        <li><a href="./nuestraliga.html">Nuestra Liga</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    
-    <section class="pdf-section">
-        <h3 class="liga-title">Boletines Oficiales</h3>
-        <div class="pdf-container">
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <img src="img/logo-liga-limpio.png" alt="Logo de la Liga Sanrafaelina" class="logo">
+            <h1>LIGA SANRAFAELINA DE FÚTBOL</h1>
 
-            <div class="pdf-item">
-                <h2>2024</h2>
-            </div>
-           
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°1</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_01_2024.pdf" download="boletin-N1" class="btn-download">Descargar Boletín N°1</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°2</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_02_2024.pdf" download="boletin-N2" class="btn-download">Descargar Boletín N°2</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°3</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_03_2024.pdf" download="boletin-N3" class="btn-download">Descargar Boletín N°3</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°4</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_04_2024.pdf" download="boletin-N4" class="btn-download">Descargar Boletín N°4</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°5</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_05_2024.pdf" download="boletin-N5" class="btn-download">Descargar Boletín N°5</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°6</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="./document/BOLETIN_06_2024.pdf" download="boletin-N6" class="btn-download">Descargar Boletín N°6</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°7</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_07_2024.pdf" download="boletin-N7" class="btn-download">Descargar Boletín N°7</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°8</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_08_2024.pdf" download="boletin-N8" class="btn-download">Descargar Boletín N°8</a>
-               
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°9</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_09_2024.pdf" download="boletin-N9" class="btn-download">Descargar Boletín N°9</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°10</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_10_2024.pdf" download="boletin-N10" class="btn-download">Descargar Boletín N°10</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°11</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_11_2024.pdf" download="boletin-N11" class="btn-download">Descargar Boletín N°11</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°12</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_12_2024.pdf" download="boletin-N12" class="btn-download">Descargar Boletín N°12</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°13</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_13_2024.pdf" download="boletin-N13" class="btn-download">Descargar Boletín N°13</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°14</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_14_2024.pdf" download="boletin-N14" class="btn-download">Descargar Boletín N°14</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°15</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_15_2024.pdf" download="boletin-N15" class="btn-download">Descargar Boletín N°15</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°16</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_16_2024.pdf" download="boletin-N16" class="btn-download">Descargar Boletín N°16</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°17</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_17_2024.pdf" download="boletin-N17" class="btn-download">Descargar Boletín N°17</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°18</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_18_2024.pdf" download="boletin-N18" class="btn-download">Descargar Boletín N°18</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°19</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_19_2024.pdf" download="boletin-N19" class="btn-download">Descargar Boletín N°19</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°20</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_20_2024.pdf" download="boletin-N20" class="btn-download">Descargar Boletín N°20</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°21</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_21_2024.pdf" download="boletin-N21" class="btn-download">Descargar Boletín N°21</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°22</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_22_2024.pdf" download="boletin-N22" class="btn-download">Descargar Boletín N°22</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°23</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_23_2024.pdf" download="boletin-N23" class="btn-download">Descargar Boletín N°23</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°24</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_24_2024.pdf" download="boletin-N24" class="btn-download">Descargar Boletín N°24</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°25</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_25_2024.pdf" download="boletin-N25" class="btn-download">Descargar Boletín N°25</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°26</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_26_2024.pdf" download="boletin-N26" class="btn-download">Descargar Boletín N°26</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°27</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_27_2024.pdf" download="boletin-N27" class="btn-download">Descargar Boletín N°27</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°28</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_28_2024.pdf" download="boletin-N28" class="btn-download">Descargar Boletín N°28</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°29</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_29_2024.pdff" download="boletin-N29" class="btn-download">Descargar Boletín N°29</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°30</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_30_2024.pdf" download="boletin-N30" class="btn-download">Descargar Boletín N°30</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°31</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_31_2024.pdf" download="boletin-N31" class="btn-download">Descargar Boletín N°31</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°32</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_32_2024.pdf" download="boletin-N32" class="btn-download">Descargar Boletín N°32</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°33</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_33_2024.pdf" download="boletin-N33" class="btn-download">Descargar Boletín N°33</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°34</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_34_2024.pdf" download="boletin-N34" class="btn-download">Descargar Boletín N°34</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°35</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_35_2024.pdf" download="boletin-N35" class="btn-download">Descargar Boletín N°35</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°36</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_36_2024.pdf" download="boletin-N36" class="btn-download">Descargar Boletín N°36</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°37</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_37_2024.pdf" download="boletin-N37" class="btn-download">Descargar Boletín N°37</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°38</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_38_2024.pdf" download="boletin-N38" class="btn-download">Descargar Boletín N°38</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°39</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_39_2024.pdf" download="boletin-N39" class="btn-download">Descargar Boletín N°39</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°40</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_40_2024.pdff" download="boletin-N40" class="btn-download">Descargar Boletín N°40</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°41</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_41_2024.pdf" download="boletin-N41" class="btn-download">Descargar Boletín N°41</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°42</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_42_2024.pdf" download="boletin-N42" class="btn-download">Descargar Boletín N°42</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°43</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_43_2024.pdf" download="boletin-N43" class="btn-download">Descargar Boletín N°43</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°44</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_44_2024.pdf" download="boletin-N44" class="btn-download">Descargar Boletín N°44</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°45</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_45_2024.pdf" download="boletin-N45" class="btn-download">Descargar Boletín N°45</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°46</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_46_2024.pdf" download="boletin-N46" class="btn-download">Descargar Boletín N°46</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°47</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_47_2024.pdf" download="boletin-N47" class="btn-download">Descargar Boletín N°47</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°48</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_48_2024.pdf" download="boletin-N48" class="btn-download">Descargar Boletín N°48</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°49</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_49_2024.pdf" download="boletin-N49" class="btn-download">Descargar Boletín N°49</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°50</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_50_2024.pdf" download="boletin-N50" class="btn-download">Descargar Boletín N°50</a>
-            </div>
-            <div class="pdf-item">
-                <h2>Boletin Oficial Liga Sanrafaelina N°51</h2>
-                <p>Descargar el boletín oficial.</p>
-                <a href="document/BOLETIN_51_2024.pdf" download="boletin-N51" class="btn-download">Descargar Boletín N°51</a>
-            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn" aria-label="Menú de campeonatos">Campeonatos</a>
+                        <div class="dropdown-content">
+                            <a href="primeraA.html">Primera A</a>
+                            <a href="primeraB.html">Primera B</a>
+                            <a href="femeninoA.html">Femenino A</a>
+                            <a href="femeninoB.html">Femenino B</a>
+                            <a href="reservaA.html">Reserva A</a>
+                            <a href="reservaB.html">Reserva B</a>
+                            <a href="futsal.html">Futsal</a>
+                        </div>
+                    </li>
+                    <li><a href="./reglamentos.html">Reglamentos</a></li>
+                    <li><a href="./boletin.html">Boletines</a></li>
+                    <li><a href="./nuestraliga.html">Nuestra Liga</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </header>
     
+ <!-- Sección de Boletines -->
+<section class="pdf-section">
+    <h2 class="liga-title">Boletines Oficiales</h2>
+    <div class="pdf-container">
+        <div class="pdf-item">
+            <h2>2024</h2>
+        </div>
+        <!-- Repetir para boletines -->
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°1</h2>
+            <a href="document/BOLETIN_01_2024.pdf" download="boletin-N1" class="btn btn-primary">Descargar Boletín N°1</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°2</h2>
+            <a href="document/BOLETIN_02_2024.pdf" download="boletin-N2" class="btn btn-primary">Descargar Boletín N°2</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°3</h2>
+            <a href="document/BOLETIN_03_2024.pdf" download="boletin-N3" class="btn btn-primary">Descargar Boletín N°3</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°4</h2>
+            <a href="document/BOLETIN_04_2024.pdf" download="boletin-N4" class="btn btn-primary">Descargar Boletín N°4</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°5</h2>
+            <a href="document/BOLETIN_05_2024.pdf" download="boletin-N5" class="btn btn-primary">Descargar Boletín N°5</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°6</h2>
+            <a href="document/BOLETIN_06_2024.pdf" download="boletin-N6" class="btn btn-primary">Descargar Boletín N°6</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°7</h2>
+            <a href="document/BOLETIN_07_2024.pdf" download="boletin-N7" class="btn btn-primary">Descargar Boletín N°7</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°8</h2>
+            <a href="document/BOLETIN_08_2024.pdf" download="boletin-N8" class="btn btn-primary">Descargar Boletín N°8</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°9</h2>
+            <a href="document/BOLETIN_09_2024.pdf" download="boletin-N9" class="btn btn-primary">Descargar Boletín N°9</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°10</h2>
+            <a href="document/BOLETIN_10_2024.pdf" download="boletin-N10" class="btn btn-primary">Descargar Boletín N°10</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°11</h2>
+            <a href="document/BOLETIN_11_2024.pdf" download="boletin-N11" class="btn btn-primary">Descargar Boletín N°11</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°12</h2>
+            <a href="document/BOLETIN_12_2024.pdf" download="boletin-N12" class="btn btn-primary">Descargar Boletín N°12</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°13</h2>
+            <a href="document/BOLETIN_13_2024.pdf" download="boletin-N13" class="btn btn-primary">Descargar Boletín N°13</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°14</h2>
+            <a href="document/BOLETIN_14_2024.pdf" download="boletin-N14" class="btn btn-primary">Descargar Boletín N°14</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°15</h2>
+            <a href="document/BOLETIN_15_2024.pdf" download="boletin-N15" class="btn btn-primary">Descargar Boletín N°15</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°16</h2>
+            <a href="document/BOLETIN_16_2024.pdf" download="boletin-N16" class="btn btn-primary">Descargar Boletín N°16</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°17</h2>
+            <a href="document/BOLETIN_17_2024.pdf" download="boletin-N17" class="btn btn-primary">Descargar Boletín N°17</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°18</h2>
+            <a href="document/BOLETIN_18_2024.pdf" download="boletin-N18" class="btn btn-primary">Descargar Boletín N°18</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°19</h2>
+            <a href="document/BOLETIN_19_2024.pdf" download="boletin-N19" class="btn btn-primary">Descargar Boletín N°19</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°20</h2>
+            <a href="document/BOLETIN_20_2024.pdf" download="boletin-N20" class="btn btn-primary">Descargar Boletín N°20</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°21</h2>
+            <a href="document/BOLETIN_21_2024.pdf" download="boletin-N21" class="btn btn-primary">Descargar Boletín N°21</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°22</h2>
+            <a href="document/BOLETIN_22_2024.pdf" download="boletin-N22" class="btn btn-primary">Descargar Boletín N°22</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°23</h2>
+            <a href="document/BOLETIN_23_2024.pdf" download="boletin-N23" class="btn btn-primary">Descargar Boletín N°23</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°24</h2>
+            <a href="document/BOLETIN_24_2024.pdf" download="boletin-N24" class="btn btn-primary">Descargar Boletín N°24</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°25</h2>
+            <a href="document/BOLETIN_25_2024.pdf" download="boletin-N25" class="btn btn-primary">Descargar Boletín N°25</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°26</h2>
+            <a href="document/BOLETIN_26_2024.pdf" download="boletin-N26" class="btn btn-primary">Descargar Boletín N°26</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°27</h2>
+            <a href="document/BOLETIN_27_2024.pdf" download="boletin-N27" class="btn btn-primary">Descargar Boletín N°27</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°28</h2>
+            <a href="document/BOLETIN_28_2024.pdf" download="boletin-N28" class="btn btn-primary">Descargar Boletín N°28</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°29</h2>
+            <a href="document/BOLETIN_29_2024.pdf" download="boletin-N29" class="btn btn-primary">Descargar Boletín N°29</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°30</h2>
+            <a href="document/BOLETIN_30_2024.pdf" download="boletin-N30" class="btn btn-primary">Descargar Boletín N°30</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°31</h2>
+            <a href="document/BOLETIN_31_2024.pdf" download="boletin-N31" class="btn btn-primary">Descargar Boletín N°31</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°32</h2>
+            <a href="document/BOLETIN_32_2024.pdf" download="boletin-N32" class="btn btn-primary">Descargar Boletín N°32</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°33</h2>
+            <a href="document/BOLETIN_33_2024.pdf" download="boletin-N33" class="btn btn-primary">Descargar Boletín N°33</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°34</h2>
+            <a href="document/BOLETIN_34_2024.pdf" download="boletin-N34" class="btn btn-primary">Descargar Boletín N°34</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°35</h2>
+            <a href="document/BOLETIN_35_2024.pdf" download="boletin-N35" class="btn btn-primary">Descargar Boletín N°35</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°36</h2>
+            <a href="document/BOLETIN_36_2024.pdf" download="boletin-N36" class="btn btn-primary">Descargar Boletín N°36</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°37</h2>
+            <a href="document/BOLETIN_37_2024.pdf" download="boletin-N37" class="btn btn-primary">Descargar Boletín N°37</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°38</h2>
+            <a href="document/BOLETIN_38_2024.pdf" download="boletin-N38" class="btn btn-primary">Descargar Boletín N°38</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°39</h2>
+            <a href="document/BOLETIN_39_2024.pdf" download="boletin-N39" class="btn btn-primary">Descargar Boletín N°39</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°40</h2>
+            <a href="document/BOLETIN_40_2024.pdf" download="boletin-N40" class="btn btn-primary">Descargar Boletín N°40</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°41</h2>
+            <a href="document/BOLETIN_41_2024.pdf" download="boletin-N41" class="btn btn-primary">Descargar Boletín N°41</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°42</h2>
+            <a href="document/BOLETIN_42_2024.pdf" download="boletin-N42" class="btn btn-primary">Descargar Boletín N°42</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°43</h2>
+            <a href="document/BOLETIN_43_2024.pdf" download="boletin-N43" class="btn btn-primary">Descargar Boletín N°43</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°44</h2>
+            <a href="document/BOLETIN_44_2024.pdf" download="boletin-N44" class="btn btn-primary">Descargar Boletín N°44</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°45</h2>
+            <a href="document/BOLETIN_45_2024.pdf" download="boletin-N45" class="btn btn-primary">Descargar Boletín N°45</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°46</h2>
+            <a href="document/BOLETIN_46_2024.pdf" download="boletin-N46" class="btn btn-primary">Descargar Boletín N°46</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°47</h2>
+            <a href="document/BOLETIN_47_2024.pdf" download="boletin-N47" class="btn btn-primary">Descargar Boletín N°47</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°48</h2>
+            <a href="document/BOLETIN_48_2024.pdf" download="boletin-N48" class="btn btn-primary">Descargar Boletín N°48</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°49</h2>
+            <a href="document/BOLETIN_49_2024.pdf" download="boletin-N49" class="btn btn-primary">Descargar Boletín N°49</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°50</h2>
+            <a href="document/BOLETIN_50_2024.pdf" download="boletin-N50" class="btn btn-primary">Descargar Boletín N°50</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial Liga Sanrafaelina N°51</h2>
+            <a href="document/BOLETIN_51_2024.pdf" download="boletin-N51" class="btn btn-primary">Descargar Boletín N°51</a>
+        </div>
+    </div>
+</section>
+
+    
+
     <!-- Publicidad antes del footer -->
     <div class="ad-banner">
-        <img src="img/gobierno-mendoza.jpg" alt="Publicidad">
-        <img src="img/Libreria-Tio-Fenix-02.png" alt="Publicidad">
-        <img src="img/logo-afa.jpeg" alt="Publicidad">
-        <img src="img/logo-commet.png" alt="Publicidad">
-
-        <img src="img/tu-municipio-sr.jpg" alt="Publicidad">
-        <img src="img/mañana-seguro-logo.png" alt="Publicidad">
-
+        <img src="img/gobierno-mendoza.jpg" alt="Publicidad del Gobierno de Mendoza">
+        <img src="img/Libreria-Tio-Fenix-02.png" alt="Publicidad de Librería Tío Fénix">
+        <img src="img/logo-afa.jpeg" alt="Publicidad de AFA">
+        <img src="img/logo-commet.png" alt="Publicidad de COMET">
+        <img src="img/tu-municipio-sr.jpg" alt="Publicidad del Municipio">
     </div>
 
     <!-- FOOTER -->
     <footer>
         <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=61554875589776" class="fab fa-facebook"
-                aria-label="Facebook"></a>
+            <a href="https://www.facebook.com/profile.php?id=61554875589776" class="fab fa-facebook" aria-label="Facebook"></a>
             <a href="https://wa.me/5492604626662" class="fab fa-whatsapp" aria-label="WhatsApp"></a>
             <a href="https://www.instagram.com/ligasanrafaelmza/" class="fab fa-instagram" aria-label="Instagram"></a>
         </div>
@@ -372,3 +302,14 @@
 </body>
 
 </html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

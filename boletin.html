@@ -3,48 +3,33 @@
 
 <head>
     <!-- Configuración básica -->
-    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Establece la ventana gráfica para mejorar la presentación en dispositivos móviles -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Descripción del sitio para SEO -->
     <meta name="description" content="Sitio web oficial de la Liga Sanrafaelina de Fútbol. Encuentra información sobre campeonatos, equipos y más.">
-    <!-- Palabras clave para mejorar el SEO -->
-    <meta name="keywords" content="fútbol, liga, San Rafael, deportes, campeonato, 2024, fútbol argentino, equipos, Liga Sanrafaelina, liga Sanra, liga San Rafael, Mendoza, fútbol sanrafaelino">
-    <!-- Autor del sitio -->
+    <meta name="keywords" content="fútbol, liga, San Rafael, deportes, campeonato, 2024, fútbol argentino, equipos, Liga Sanrafaelina">
     <meta name="author" content="Luciano Boldrini">
-
-    <!-- Etiquetas Open Graph para mejorar la presentación en redes sociales -->
-    <meta property="og:title" content="Liga Sanrafaelina de Fútbol"> <!-- Título para Open Graph -->
-    <meta property="og:description" content="Sitio web oficial de la Liga Sanrafaelina de Fútbol. Encuentra información sobre campeonatos, equipos y más."> <!-- Descripción para Open Graph -->
-    <meta property="og:image" content="https://ligasanrafaelina.com/img/logo-liga.png"> <!-- URL de la imagen para Open Graph -->
-    <meta property="og:url" content="https://ligasanrafaelina.com"> <!-- URL del sitio para Open Graph -->
-    <meta property="og:type" content="website"> <!-- Tipo de contenido Open Graph -->
-
-    <!-- Instrucciones para motores de búsqueda -->
-    <meta name="robots" content="index, follow"> <!-- Indica a los motores de búsqueda que indexen y sigan los enlaces en la página -->
-
-    <!-- URL canónica para evitar problemas de contenido duplicado -->
-    <link rel="canonical" href="https://ligasanrafaelina.com"> <!-- URL canónica del sitio -->
-
-    <!-- Título del sitio -->
-    <title>Liga Sanrafaelina de Fútbol</title> <!-- Título de la página que aparece en la pestaña del navegador -->
-
-    <!-- Enlace a estilos CSS -->
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu hoja de estilos principal -->
-
-    <!-- FontAwesome para íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Enlace a la biblioteca de íconos de FontAwesome -->
-
-    <!-- Bootstrap para componentes y diseño responsivo -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Enlace a la biblioteca Bootstrap -->
-
-    <!-- Favicon (icono de pelota de fútbol) -->
-    <link rel="icon" href="img/favicon-LSF.png" type="image/x-icon"> <!-- URL del favicon del sitio, que será una imagen de una pelota de fútbol -->
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- Enlace a la fuente Roboto de Google Fonts -->
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Liga Sanrafaelina de Fútbol">
+    <meta property="og:description" content="Sitio web oficial de la Liga Sanrafaelina de Fútbol. Encuentra información sobre campeonatos, equipos y más.">
+    <meta property="og:image" content="https://ligasanrafaelina.com/img/logo-liga.png">
+    <meta property="og:url" content="https://ligasanrafaelina.com">
+    <meta property="og:type" content="website">
+    
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ligasanrafaelina.com">
+    
+    <title>Liga Sanrafaelina de Fútbol</title>
+    
+    <!-- Enlaces a estilos CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="img/favicon-LSF.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
     <!-- HEADER -->
@@ -66,7 +51,6 @@
                             <a href="reservaA.html">Reserva A</a>
                             <a href="reservaB.html">Reserva B</a>
                             <a href="futsal.html">Futsal</a>
-
                         </div>
                     </li>
                     <li><a href="./reglamentos.html">Reglamentos</a></li>
@@ -78,42 +62,60 @@
     </header>
 
     <!-- MAIN SECTION -->
-    <main id="inicio"> <!-- Botón para Boletines 2024 -->
+    <main id="inicio">
         <div class="boletines">
-            <h2>Boletines Oficiales</h2> <a href="boletines2024.html" class="btn-boletines">Boletines 2024</a>
+            <h2>Boletines Oficiales LSF 2024</h2>
+            <a href="boletines2024.html" class="btn btn-primary">Boletines 2024</a>
+        </div>
+        <hr>
+        <div class="pdf-item">
+            <h2>Boletín Oficial LSF 2025</h2>
+            <p>Descargar el boletín oficial N°1</p>
+            <a href="document/BOLETIN_01_2025.pdf" download="boletin-N1" class="btn btn-success">Descargar Boletín N°1</a>
         </div>
         <div class="pdf-item">
-            <h2>Boletin Oficial Liga Sanrafaelina N°1 </h2>
-            <p>Descargar el boletín oficial 2025.</p>
-            <a href="document/BOLETIN_01_2024.pdf" download="boletin-N1" class="btn-download">Descargar Boletín N°1</a>
+            <h2>Boletín Oficial LSF 2025</h2>
+            <p>Descargar el boletín oficial N°2</p>
+            <a href="document/BOLETIN_02_2025.pdf" download="boletin-N2" class="btn btn-success">Descargar Boletín N°2</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial LSF 2025</h2>
+            <p>Descargar el boletín oficial N°3</p>
+            <a href="document/BOLETIN_03_2025.pdf" download="boletin-N3" class="btn btn-success">Descargar Boletín N°3</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial LSF 2025</h2>
+            <p>Descargar el boletín oficial N°4</p>
+            <a href="document/BOLETIN_04_2025.pdf" download="boletin-N4" class="btn btn-success">Descargar Boletín N°4</a>
+        </div>
+        <div class="pdf-item">
+            <h2>Boletín Oficial LSF 2025</h2>
+            <p>Descargar el boletín oficial N°5</p>
+            <a href="document/BOLETIN_05_2025.pdf" download="boletin-N5" class="btn btn-success">Descargar Boletín N°5</a>
         </div>
 
         <!-- Publicidad antes del footer -->
         <div class="ad-banner">
-            <img src="img/gobierno-mendoza.jpg" alt="Publicidad">
-            <img src="img/Libreria-Tio-Fenix-02.png" alt="Publicidad">
-            <img src="img/logo-afa.jpeg" alt="Publicidad">
-            <img src="img/logo-commet.png" alt="Publicidad">
-
-            <img src="img/tu-municipio-sr.jpg" alt="Publicidad">
-            <img src="img/mañana-seguro-logo.png" alt="Publicidad">
-
+            <img src="img/gobierno-mendoza.jpg" alt="Publicidad del Gobierno de Mendoza">
+            <img src="img/Libreria-Tio-Fenix-02.png" alt="Publicidad de Librería Tío Fénix">
+            <img src="img/logo-afa.jpeg" alt="Publicidad de AFA">
+            <img src="img/logo-commet.png" alt="Publicidad de COMET">
+            <img src="img/tu-municipio-sr.jpg" alt="Publicidad del Municipio">
         </div>
+    </main>
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=61554875589776" class="fab fa-facebook"
-                    aria-label="Facebook"></a>
-                <a href="https://wa.me/5492604626662" class="fab fa-whatsapp" aria-label="WhatsApp"></a>
-                <a href="https://www.instagram.com/ligasanrafaelmza/" class="fab fa-instagram"
-                    aria-label="Instagram"></a>
-            </div>
-            <p>&copy; 2025 Liga Sanrafaelina de Fútbol</p>
-        </footer>
+    <!-- FOOTER -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61554875589776" class="fab fa-facebook" aria-label="Facebook"></a>
+            <a href="https://wa.me/5492604626662" class="fab fa-whatsapp" aria-label="WhatsApp"></a>
+            <a href="https://www.instagram.com/ligasanrafaelmza/" class="fab fa-instagram" aria-label="Instagram"></a>
+        </div>
+        <p>&copy; 2025 Liga Sanrafaelina de Fútbol</p>
+    </footer>
 
-        <!-- Scripts de Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
